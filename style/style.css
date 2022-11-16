@@ -38,6 +38,17 @@ img {
     vertical-align: top;
 }
 
+/* Component */
+button {
+    color: var(--btn-font-color);
+    background-color: var(--btn-bg-color);
+    cursor: pointer;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-family: 'GmarketSansBold';
+}
+
 /* Typo */
 @font-face {
     font-family: 'GmarketSansMedium';
@@ -113,11 +124,12 @@ img {
 }
 
 .txt-field {
-    margin-bottom: 30px;
+    line-height: 4rem;
 }
 
 .txt-time {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    line-height: 4rem;
 }
 
 .input .inp-field,
@@ -127,6 +139,12 @@ img {
     margin: 0 10px;
     border-radius: 7px;
 }
+
+.input .inp-field::placeholder,
+.input .inp-time::placeholder {
+    color: #BABCBE;
+}
+
 
 .input .btn-submit {
     position: relative;
@@ -176,17 +194,186 @@ img {
 .footer .img-copyright {
     width: 365px;
 }
-    
 
-/* Component */
-button {
-    color: var(--btn-font-color);
-    background-color: var(--btn-bg-color);
-    cursor: pointer;
-    padding: 20px 50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 56px;
-    font-family: 'GmarketSansBold';
+.section-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.section-modal .modal {
+    z-index: 999;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 76px 10px 68px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.modal .img-cheer {
+    width: 388px;
+}
+
+.modal .img-dream {
+    width: 230px;
+}
+
+.modal .img-licat {
+    width: 433px;
 }
 
 
+/* Tablet Size Media Query */
+@media screen and (min-width: 565px) and (max-width: 892px) {
+    .txt-time {
+        width: 538px;
+    }
+    
+    .txt-field {
+        width: 558px;
+    }
+
+    /* Component */
+    button {
+        padding: 20px 40px;
+    }
+
+    .input .btn-submit {
+        width: 360px;
+        border-radius: 13px;
+    }
+}
+
+/* Mobile Size Media Query */
+@media screen and (max-width: 564px) {
+    :root {
+        font-family: 'GmarketSansMedium';
+        font-size: 14px;
+    }
+
+    .intro strong {
+        font-size: 1rem;
+    }
+
+    .result strong {
+        font-size: 1.6rem;
+    }
+
+    /* Component */
+    button {
+        padding: 12px 18px;
+        border-radius: 56px;
+    }
+
+    /* Layout */
+    .section-rule {
+        gap: 60px;
+        padding: 40px 20px;
+    }
+
+    /* Design */
+    .section-rule .title .img-logo {
+        width: 282px;
+    }
+
+    .section-rule .title {
+        background-size: 130px;
+        padding: 32px 0;
+    }
+
+    .intro .img-better {
+        width: 300px;
+        margin-bottom: 60px;
+    }
+
+    .intro .txt-definition {
+        font-size: 1rem;
+        line-height: 1.8em;
+        background-size: 24px, 24px;
+        background-position: left 1.6em, right 1.6em;
+    }
+
+    .txt-field {
+        width: 314px;
+    }
+
+    .txt-time {
+        width: 310px;
+    }
+
+    .input .inp-field,
+    .input .inp-time {
+        width: 10rem;
+        padding: 12px 0;
+        margin: 0 4px;
+    }
+
+    .input .btn-submit {
+        position: relative;
+        width: 240px;
+        border-radius: 13px;
+        padding: 16px 36px;
+    }
+
+    .input .btn-submit::after {
+        width: 42px;
+        height: 40px;
+        right: -46px;
+        bottom: 0;
+    }
+
+    .result strong {
+        margin: 0 8px;
+    }
+
+    .result .btn-go {
+        margin-right: 12px;
+    }
+
+    .footer {
+        gap: 16px;
+        padding: 32px;
+    }
+
+    .footer .img-weniv {
+        width: 90px;
+    }
+
+    .footer .img-copyright {
+        width: 274px;
+    }
+
+    .section-modal .modal {
+        width: 330px;
+        height: 500px;
+        padding: 40px 0;
+    }
+
+    .modal .img-cheer {
+        width: 200px;
+    }
+
+    .modal .img-dream {
+        width: 200px;
+    }
+
+    .modal .img-licat {
+        width: 240px;
+    }
+
+    .modal .btn-close {
+        border-radius: 13px;
+    }
+}
+    
