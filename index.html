@@ -6,52 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>
-            <img src="images/logo-main.png" alt="일만 시간의 법칙 페이지 로고입니다.">
-        </h1>
-    </header>
+    <section class="section-rule">
+        <h2 class="title">
+            <img class="img-logo" src="images/logo-main.png" alt="일만 시간의 법칙 페이지 로고입니다.">
+        </h2>
 
-    <main>
-        <section>
-            <h2>일만 시간의 법칙 소개</h2>
-            <img src="images/txt-better.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
-            <p>
+        <section class="intro">
+            <h3 class="ir">일만 시간의 법칙 소개</h3>
+            <img class="img-better" src="images/txt-better.png" alt="연습은 어제의 당신보다 당신을 더 낫게 만든다.">
+            <p class="txt-definition">
                 <strong>1만 시간의 법칙</strong>은
                 <br>
-                어떤 분야의 전문가가 도기 위해서는
+                어떤 분야의 전문가가 되기 위해서는
                 <br>
                 최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
         </section>
-        <form>
+        <form class="input">
             <fieldset>
-                <legend>희망 분야와 하루 훈련 시간</legend>
-                <label for="inpField">희망 분야</label>
-                <p>나는 <input type="text"> 전문가가 될 것이다.</p>
-                <label for="inpHour">하루 훈련 시간</label>
-                <p>그래서 앞으로 매일 하루에 <input type="text"> 시간씩 훈련할 것이다.</p>
-                <button>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                <legend class="ir">희망 분야와 하루 훈련 시간</legend>
+                <label for="inpField" class="ir">희망 분야</label>
+                <p class="txt-field">
+                    나는
+                    <input class="inp-field" type="text" placeholder="예) 프로그래밍" required>
+                    전문가가 될 것이다.
+                </p>
+                <label for="inpHour" class="ir">하루 훈련 시간</label>
+                <p class="txt-time">
+                    그래서 앞으로 매일 하루에
+                    <input class="inp-time" type="number" placeholder="예) 5" require>
+                    시간씩 훈련할 것이다.
+                </p>
+                <button class="btn-submit">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
             </fieldset>
         </form>
-        <section>
-            <h2>1만 시간을 채우기 위한 날짜 계산 결과</h2>
-            <p>당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서</p>
-            <p>대략 <strong>5110</strong>일 이상 훈련하셔야 합니다! &#58;&#41;</p>
-            <button>훈련하러 가기 GO!GO!</button>
-            <button>공유하기</button>
+        <section class="result">
+            <h3 class="ir">1만 시간을 채우기 위한 날짜 계산 결과</h3>
+            <p class="txt-field">
+                당신은<strong>프로그래밍</strong>전문가가 되기 위해서
+            </p>
+            <p class="txt-time">
+                대략<strong>5110</strong>일 이상 훈련하셔야 합니다! &#58;&#41;
+            </p>
+            <button class="btn-go">훈련하러 가기 GO!GO!</button>
+            <button class="btn-share">공유하기</button>
         </section>
-    </main>
+    </section>
 
-    <footer>
-        <img src="images/weniv.png" alt="주식회사 위니브">
-        <small>
-            &#8251; 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
-            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
-        </small>
+    <footer class="footer">
+        <img class="img-weniv" src="images/weniv.png" alt="주식회사 위니브">
+        <img class="img-copyright" src="images/txt-copyright.png"
+            alt="본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. 수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.">
     </footer>
 </body>
 
