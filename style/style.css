@@ -233,6 +233,11 @@ button {
     width: 433px;
 }
 
+/* JS */
+.result {
+    display: none;
+}
+
 
 /* Tablet Size Media Query */
 @media screen and (min-width: 565px) and (max-width: 892px) {
