@@ -79,6 +79,13 @@ button {
     font-size: 3rem;
 }
 
+/* Keyframes */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Layout */
 .section-rule {
     display: flex;
@@ -164,6 +171,18 @@ button {
     background-repeat: no-repeat;
 }
 
+.loading-result {
+    display: none;
+}
+
+.img-loading {
+    animation: rotate 1.2s linear;
+}
+
+.result {
+    display: none;
+}
+
 .result strong {
     margin: 0 12px;
     vertical-align: middle;
@@ -232,12 +251,6 @@ button {
 .modal .img-licat {
     width: 433px;
 }
-
-/* JS */
-.result {
-    display: none;
-}
-
 
 /* Tablet Size Media Query */
 @media screen and (min-width: 565px) and (max-width: 892px) {
