@@ -220,7 +220,6 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     display: none;
@@ -269,6 +268,30 @@ button {
 
     .input .btn-submit {
         width: 360px;
+        border-radius: 13px;
+    }
+
+    .section-modal .modal {
+        width: 330px;
+        height: 500px;
+        padding: 40px 0;
+    }
+
+    .modal .img-cheer {
+        width: 200px;
+    }
+
+    .modal .img-dream {
+        width: 200px;
+    }
+
+    .modal .img-licat {
+        width: 240px;
+    }
+
+    .modal .btn-close {
+        font-size: 14px;
+        padding: 12px 18px;
         border-radius: 13px;
     }
 }
